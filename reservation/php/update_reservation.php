@@ -17,20 +17,11 @@ try {
         'start_date' => $_POST['start_date'],
         'end_date' => $_POST['end_date'],
     ]);
+
+    // Redirect to Reservation.php page after the update is done
     header("Location: ../Reservation.php");
     exit();
-//    $query->execute([
-//        'id' => 44,
-//        'phone_number' => 999,
-//        'person_count' => 999,
-//        'start_date' => "12/12/2020",
-//        'end_date' => "12/12/2020",
-//    ]);
-
-//    var_dump($query);
 } catch (PDOException $e) {
-    $e->getMessage();
+    echo $e->getMessage();
 }
-
 ?>
-
