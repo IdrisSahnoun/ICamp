@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reservation</title>
+    <title>Destination</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
-    <link rel="stylesheet" href="../css/Accueil.css" media="screen">
-    <link rel="stylesheet" href="css/reservation.css" media="screen">
-    <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="../../css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../../css/Accueil.css" media="screen">
+    <link rel="stylesheet" href="../css/reservation.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../../js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../../js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet"
@@ -18,11 +18,11 @@
 
 
     <script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "Site1",
-        "logo": "images/mostfa.png"
-    }</script>
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Site1",
+            "logo": "images/mostfa.png"
+        }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Accueil">
     <meta property="og:type" content="website">
@@ -32,7 +32,7 @@
 <header class="u-clearfix u-header u-header" style="background-color: #4d535c" id="sec-4e2d">
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="456" data-image-height="362">
-            <img src="../images/mostfa.png" class="u-logo-image u-logo-image-1">
+            <img src="../../images/mostfa.png" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
             <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -55,7 +55,7 @@
                 <ul class="u-nav u-unstyled u-nav-1">
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../index.html" style="padding: 10px 92px;">Accueil</a>
+                            href="../../index.html" style="padding: 10px 92px;">Accueil</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
@@ -63,19 +63,19 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="Reservation.php" style="padding: 10px 92px;">Reservation</a>
+                            href="../Reservation.php" style="padding: 10px 92px;">Reservation</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="destination/Destination.php" style="padding: 10px 92px;">Destination</a>
+                            href="Destination.php" style="padding: 10px 92px;">Destination</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../Contact.html" style="padding: 10px 92px;">Contact</a>
+                            href="../../Contact.html" style="padding: 10px 92px;">Contact</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../À-propos-de.html" style="padding: 10px 92px;">À propos</a>
+                            href="../../À-propos-de.html" style="padding: 10px 92px;">À propos</a>
                     </li>
                 </ul>
             </div>
@@ -88,12 +88,12 @@
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link">Shop</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Reservation</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Reservation.php">Reservation</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Contact.html">Contact</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../../Contact.html">Contact</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../À-propos-de.html">À propos
-                                de</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../../À-propos-de.html">À propos
+                                    de</a>
                             </li>
                         </ul>
                     </div>
@@ -110,43 +110,27 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th scope="col">Phone Number</th>
-                    <th class="th" scope="col">Person Count</th>
-                    <th class="th" scope="col">Start Date</th>
-                    <th class="th" scope="col">End Date</th>
-                    <th class="th" scope="col">Destination</th>
+                    <th scope="col">Destination Name</th>
+                    <th class="th" scope="col">Location</th>
+                    <th class="th" scope="col">Activity Type</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php include './php/fetch_all_reservations.php'; ?>
-                <?php foreach ($result as $row) :
-                    global $pdo;
-                    try {
-                        $query = $pdo->prepare(
-                            'SELECT * FROM destination WHERE id=:id'
-                        );
-                        $query->execute([
-                            'id' => $row['destination']
-                        ]);
-                        $destination = $query->fetch();
-                    } catch (PDOException $e) {
-                        $e->getMessage();
-                    }?>
-                <tr class="tr">
-                    <td hidden=""><?= $row['id'] ?></td>
-                    <td><?= $row['phone_number'] ?></td>
-                    <td><?= $row['person_count'] ?></td>
-                    <td><?= $row['start_date'] ?></td>
-                    <td><?= $row['end_date'] ?></td>
-                    <td><?= $destination['name'] ?></td>
-                    <td><a href="update_page.php?id=<?= $row['id'] ?>">Update</a></td>
-                    <td><a href="php/delete_reservation.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this reservation?')">Delete</a></td>
-                </tr>
+                <?php include 'list_destination.php'; ?>
+                <?php foreach ($result as $row) : ?>
+                    <tr class="tr">
+                        <td hidden=""><?= $row['id'] ?></td>
+                        <td><?= $row['name'] ?></td>
+                        <td><?= $row['location'] ?></td>
+                        <td><?= $row['activity_type'] ?></td>
+                        <td><a href="update_destination_page.php?id=<?= $row['id'] ?>">Update</a></td>
+                        <td><a href="delete_destination.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this destination?')">Delete</a></td>
+                    </tr>
                 <?php endforeach; ?>
                 </tbody>
             </table>
-            <a href="add_page.php"
-               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Reservation</a>
+            <a href="add_destination_page.php"
+               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Destination</a>
         </div>
     </div>
 </section>

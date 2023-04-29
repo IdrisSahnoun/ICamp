@@ -66,6 +66,10 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                            href="destination/Destination.php" style="padding: 10px 92px;">Destination</a>
+                    </li>
+                    <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
                             href="../Contact.html" style="padding: 10px 92px;">Contact</a>
                     </li>
                     <li class="u-nav-item"><a
@@ -84,6 +88,8 @@
                             <li class="u-nav-item"><a class="u-button-style u-nav-link">Shop</a>
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Reservation</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="destination/Destination.php">Destination</a>
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link"
                                                       href="../Contact.html">Contact</a>
@@ -139,6 +145,16 @@
                            value="<?php echo $result['end_date']; ?>"
                            class="u-input input_label">
                 </div>
+                <div class="u-form-group u-label-none u-form-group-4">
+                    <label for="destination" class="u-label">Input</label>
+                    <?php include 'destination/list_destination.php'; ?>
+                    <select id="destination" name="destination" class="u-input input_label">
+                        <?php foreach ($result as $row) : ?>
+                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
                 <div class="u-align-left u-form-group u-form-submit u-form-group-5">
                     <a href="Reservation.php" class="u-btn u-btn-submit u-button-style">Submit</a>
                     <input type="submit" value="submit" class="u-form-control-hidden" >
