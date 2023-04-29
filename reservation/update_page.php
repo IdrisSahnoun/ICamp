@@ -85,9 +85,11 @@
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Reservation</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Contact.html">Contact</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                                                      href="../Contact.html">Contact</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../À-propos-de.html">À propos
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../À-propos-de.html">À
+                                    propos
                                     de</a>
                             </li>
                         </ul>
@@ -138,18 +140,12 @@
                            class="u-input input_label">
                 </div>
                 <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                    <a href="Reservation.php" class="u-btn u-btn-submit u-button-style" onclick="return confirm('Are you sure you want to update this reservation?')">Done</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden">
+                    <a href="Reservation.php" class="u-btn u-btn-submit u-button-style">Submit</a>
+                    <input type="submit" value="submit" class="u-form-control-hidden" >
                 </div>
-
-                <input type="hidden" value="" name="recaptchaResponse">
-                <input type="hidden" name="formServices" value="3009e08d9fada41220c66abf7a7d99a2">
             </form>
+
         </div>
-        <!--        <h6 class="u-text u-text-default u-text-1">Phone Number : </h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-2">Person Count :</h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-3">Start Date : </h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-4">End Date :</h6>-->
     </div>
 </section>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f3c2">
@@ -169,5 +165,6 @@
         <span>Website Builder Software</span>
     </a>.
 </section>
+
 </body>
 </html>
