@@ -114,17 +114,31 @@
                     <th class="th" scope="col">Person Count</th>
                     <th class="th" scope="col">Start Date</th>
                     <th class="th" scope="col">End Date</th>
+                    <th class="th" scope="col">Destination</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php include './php/fetch_all_reservations.php'; ?>
-                <?php foreach ($result as $row) : ?>
+                <?php foreach ($result as $row) :
+                    global $pdo;
+                    try {
+                        $query = $pdo->prepare(
+                            'SELECT * FROM destination WHERE id=:id'
+                        );
+                        $query->execute([
+                            'id' => $row['destination']
+                        ]);
+                        $destination = $query->fetch();
+                    } catch (PDOException $e) {
+                        $e->getMessage();
+                    }?>
                 <tr class="tr">
                     <td hidden=""><?= $row['id'] ?></td>
                     <td><?= $row['phone_number'] ?></td>
                     <td><?= $row['person_count'] ?></td>
                     <td><?= $row['start_date'] ?></td>
                     <td><?= $row['end_date'] ?></td>
+                    <td><?= $destination['name'] ?></td>
                     <td><a href="update_page.php?id=<?= $row['id'] ?>">Update</a></td>
                     <td><a href="php/delete_reservation.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this reservation?')">Delete</a></td>
                 </tr>

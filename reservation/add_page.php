@@ -135,10 +135,11 @@
                 </div>
                 <div class="u-form-group u-label-none u-form-group-4">
                     <label for="destination" class="u-label">Input</label>
+                    <?php include 'destination/list_destination.php'; ?>
                     <select id="destination" name="destination" class="u-input input_label">
-                        <option value="">Dest 1</option>
-                        <option value="1">Dest 2</option>
-                        <option value="31">Dest 1</option>
+                        <?php foreach ($result as $row) : ?>
+                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <div class="u-align-left u-form-group u-form-submit u-form-group-5">

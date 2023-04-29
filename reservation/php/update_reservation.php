@@ -7,7 +7,8 @@ try {
                        phone_number = :phone_number,
                        person_count = :person_count,
                        start_date = :start_date,
-                       end_date = :end_date
+                       end_date = :end_date,
+                       destination = :destination
                        WHERE id=:id'
     );
     $query->execute([
@@ -16,6 +17,7 @@ try {
         'person_count' => $_POST['person_count'],
         'start_date' => $_POST['start_date'],
         'end_date' => $_POST['end_date'],
+        'destination' => $_POST['destination'],
     ]);
 
     // Redirect to Reservation.php page after the update is done
