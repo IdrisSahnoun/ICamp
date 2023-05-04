@@ -120,25 +120,25 @@
                     <input type="text" placeholder="Destination Name" id="name" name="name"
                            class="u-input input_label"
                            value="<?php echo $result['name']; ?>"
-                           required="">
+                           disabled>
                 </div>
                 <div class="u-form-email u-form-group u-label-none u-form-group-2">
                     <label for="location" class="u-label">Location</label>
                     <input type="text" placeholder="Location"
                            id="location" name="location"
                            value="<?php echo $result['location']; ?>"
-                           class="u-input input_label" required="">
+                           class="u-input input_label" disabled>
                 </div>
                 <div class="u-form-group u-label-none u-form-group-3">
                     <label for="activity_type" class="u-label">Activity Type</label>
                     <input type="text" placeholder="Activity Type"
                            id="activity_type" name="activity_type"
                            value="<?php echo $result['activity_type']; ?>"
-                           class="u-input input_label">
+                           class="u-input input_label" disabled>
                 </div>
                 <div class="u-form-group u-label-none u-form-group-3" >
                     <select  placeholder="Rating" id="rating" name="rating" class="u-input input_label">
-                        <option value="<?php echo $result['rating']; ?>" ></option>
+                        <option value="<?php echo $result['rating']; ?>" disabled ></option>
                         <option value="1" >1 star</option>
                         <option value="2" >2 stars</option>
                         <option value="3" >3 stars</option>
@@ -146,10 +146,8 @@
                         <option value="5" >5 stars</option>
                     </select>
                 </div>
-                <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                    <a href="Destination.php" class="u-btn u-btn-submit u-button-style">Submit</a>
-                    <input type="submit" value="submit" class="u-form-control-hidden" >
-                </div>
+                <img src="data:image/jpeg;base64,<?php echo base64_encode($result['image']); ?>" />
+
             </form>
 
         </div>

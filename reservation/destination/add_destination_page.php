@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reservation</title>
+    <title>Destination</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -26,6 +26,28 @@
     <meta property="og:title" content="Accueil">
     <meta property="og:type" content="website">
     <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+    <style>
+        .rating {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        .rating label {
+            color: #ddd;
+            font-size: 20px;
+            padding: 0 5px;
+            transition: all .4s ease;
+        }
+
+        .rating input[type="radio"]:checked + label {
+            color: #f2b01e;
+        }
+    </style>
 </head>
 <body data-home-page="Accueil.html" data-home-page-title="Accueil" class="u-body u-xl-mode" data-lang="fr">
 <header class="u-clearfix u-header u-header" style="background-color: #4d535c" id="sec-4e2d">
@@ -106,7 +128,7 @@
          data-image-height="1320" id="sec-6196">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
-            <form action="add_destination.php" method="POST">
+            <form action="add_destination.php" method="POST" enctype="multipart/form-data">
 
                 <div class="u-form-group u-form-name u-label-none u-form-group-1">
                     <label for="name" class="input_label ">Destination Name</label>
@@ -124,12 +146,28 @@
                     <input type="text" placeholder="Activity Type" id="activity_type" name="activity_type"
                            class="u-input input_label">
                 </div>
+                <div class="u-form-group u-label-none u-form-group-4" >
+                <select placeholder="Rating" id="rating" name="rating" class="u-input input_label">
+                    <option value="" ></option>
+                    <option value="1" >1 star</option>
+                    <option value="2" >2 stars</option>
+                    <option value="3" >3 stars</option>
+                    <option value="4" >4 stars</option>
+                    <option value="5" >5 stars</option>
+                </select>
+                </div>
+                <label for="image" class="u-label">Upload Destination Picture</label>
+                <input type="file" name="image" id="image" accept="image/*">
                 <div class="u-align-left u-form-group u-form-submit u-form-group-5">
                     <a href="Destination.php" class="u-btn u-btn-submit u-button-style">Submit</a>
                     <input type="submit" value="submit" class="u-form-control-hidden" >
                 </div>
                 <input type="hidden" value="" name="recaptchaResponse">
                 <input type="hidden" name="formServices" value="3009e08d9fada41220c66abf7a7d99a2">
+
+<!--                action="upload.php" method="post" enctype="multipart/form-data">-->
+<!--                <input type="file" name="destination_picture" accept="image/*">-->
+<!--                <input type="submit" value="Upload">-->
             </form>
 
         </div>

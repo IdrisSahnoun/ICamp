@@ -14,6 +14,7 @@ $stmt = $pdo->prepare($requete);
 
 if ($stmt->execute([$phone_number, $person_count, $start_date, $end_date, $destination])) {
     //echo "<h1>INSERTION AVEC SUCCESS</h1>";
+
 } else {
     echo "<h1>Erreur d'insertion</h1>";
 }
