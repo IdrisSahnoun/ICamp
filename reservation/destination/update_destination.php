@@ -15,6 +15,7 @@ try {
         'name' => $_POST['name'],
         'location' => $_POST['location'],
         'activity_type' => $_POST['activity_type'],
+        'rating' => $_POST['rating'],
     ]);
     header("Location: ../../Reservation.php");
     exit();

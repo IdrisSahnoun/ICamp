@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reservation</title>
+    <title>Destination</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../css/nicepage.css" media="screen">
-    <link rel="stylesheet" href="../css/Accueil.css" media="screen">
-    <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="../../css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="../../css/Accueil.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../../js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../../js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 5.7.9, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet"
@@ -31,7 +31,7 @@
 <header class="u-clearfix u-header u-header" style="background-color: #4d535c" id="sec-4e2d">
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="456" data-image-height="362">
-            <img src="../images/mostfa.png" class="u-logo-image u-logo-image-1">
+            <img src="../../images/mostfa.png" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
             <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -54,7 +54,7 @@
                 <ul class="u-nav u-unstyled u-nav-1">
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../index.html" style="padding: 10px 92px;">Accueil</a>
+                            href="../../index.html" style="padding: 10px 92px;">Accueil</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
@@ -62,19 +62,19 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="Reservation.php" style="padding: 10px 92px;">Reservation</a>
+                            href="../Reservation.php" style="padding: 10px 92px;">Reservation</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="destination/Destination.php" style="padding: 10px 92px;">Destination</a>
+                            href="Destination.php" style="padding: 10px 92px;">Destination</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../Contact.html" style="padding: 10px 92px;">Contact</a>
+                            href="../../Contact.html" style="padding: 10px 92px;">Contact</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../À-propos-de.html" style="padding: 10px 92px;">À propos</a>
+                            href="../../À-propos-de.html" style="padding: 10px 92px;">À propos</a>
                     </li>
                 </ul>
             </div>
@@ -87,16 +87,12 @@
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link">Shop</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Reservation</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Reservation.php">Reservation</a>
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link"
-                                                      href="destination/Destination.php">Destination</a>
+                                                      href="../../Contact.html">Contact</a>
                             </li>
-
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link"
-                                                      href="../Contact.html">Contact</a>
-                            </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../À-propos-de.html">À
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../../À-propos-de.html">À
                                     propos
                                     de</a>
                             </li>
@@ -112,55 +108,48 @@
          data-image-height="1320" id="sec-6196">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
-            <form action="php/add_reservation.php" method="POST">
+            <form method="post" action="update_destination.php"
+                  class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;"
+                  source="email" name="form">
+
+                <?php include 'get_destination_by_id.php'; ?>
+                <input type="hidden" name="id" value="<?php echo $result['id']; ?>">
+
                 <div class="u-form-group u-form-name u-label-none u-form-group-1">
-                    <label for="phone_number" class="input_label ">Phone Number</label>
-                    <input type="number" placeholder="Phone Number" id="phone_number" name="phone_number"
+                    <label for="name" class="input_label ">Destination Name</label>
+                    <input type="text" placeholder="Destination Name" id="name" name="name"
                            class="u-input input_label"
-                           required="">
-                </div>
-                <div class="u-form-group u-form-name u-label-none u-form-group-1">
-                    <label for="email" class="input_label ">Email</label>
-                    <input type="email" placeholder="Email" id="email" name="email"
-                           class="u-input input_label"
-                           required="">
+                           value="<?php echo $result['name']; ?>"
+                           disabled>
                 </div>
                 <div class="u-form-email u-form-group u-label-none u-form-group-2">
-                    <label for="person_count" class="u-label">Person Count</label>
-                    <input type="number" placeholder="Person Count" id="person_count" name="person_count"
-                           class="u-input input_label" required="">
+                    <label for="location" class="u-label">Location</label>
+                    <input type="text" placeholder="Location"
+                           id="location" name="location"
+                           value="<?php echo $result['location']; ?>"
+                           class="u-input input_label" disabled>
                 </div>
                 <div class="u-form-group u-label-none u-form-group-3">
-                    <label for="start_date" class="u-label">Input</label>
-                    <input type="date" placeholder="Start Date" id="start_date" name="start_date"
-                           class="u-input input_label">
+                    <label for="activity_type" class="u-label">Activity Type</label>
+                    <input type="text" placeholder="Activity Type"
+                           id="activity_type" name="activity_type"
+                           value="<?php echo $result['activity_type']; ?>"
+                           class="u-input input_label" disabled>
                 </div>
-                <div class="u-form-group u-label-none u-form-group-4">
-                    <label for="end_date" class="u-label">Input</label>
-                    <input type="date" placeholder="End Date" id="end_date" name="end_date" class="u-input input_label">
-                </div>
-                <div class="u-form-group u-label-none u-form-group-4">
-                    <label for="destination" class="u-label">Input</label>
-                    <?php include 'destination/list_destination.php'; ?>
-                    <select id="destination" name="destination" class="u-input input_label">
-                        <?php foreach ($result as $row) : ?>
-                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
-                        <?php endforeach; ?>
+                <div class="u-form-group u-label-none u-form-group-3" >
+                    <select  placeholder="Rating" id="rating" name="rating" class="u-input input_label">
+                        <option value="<?php echo $result['rating']; ?>" disabled ></option>
+                        <option value="1" >1 star</option>
+                        <option value="2" >2 stars</option>
+                        <option value="3" >3 stars</option>
+                        <option value="4" >4 stars</option>
+                        <option value="5" >5 stars</option>
                     </select>
                 </div>
-                <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                    <button  type=submit id="submit" name=submit class="u-btn u-btn-submit u-button-style">Submit</button>
-                    <input type="submit" value="submit" class="u-form-control-hidden">
-                </div>
-                <input type="hidden" value="" name="recaptchaResponse">
-                <input type="hidden" name="formServices" value="3009e08d9fada41220c66abf7a7d99a2">
+                <img src="data:image/jpeg;base64,<?php echo base64_encode($result['image']); ?>" />
             </form>
 
         </div>
-        <!--        <h6 class="u-text u-text-default u-text-1">Phone Number : </h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-2">Person Count :</h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-3">Start Date : </h6>-->
-        <!--        <h6 class="u-text u-text-default u-text-4">End Date :</h6>-->
     </div>
 </section>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f3c2">

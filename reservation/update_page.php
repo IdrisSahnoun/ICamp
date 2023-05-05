@@ -124,6 +124,12 @@
                            value="<?php echo $result['phone_number']; ?>"
                            required="">
                 </div>
+                <label for="email" class="input_label ">Email</label>
+                <input type="email" placeholder="Email" id="email" name="email"
+                       class="u-input input_label"
+                       value="<?php echo $result['email']; ?>"
+                       required="">
+        </div>
                 <div class="u-form-email u-form-group u-label-none u-form-group-2">
                     <label for="person_count" class="u-label">Person Count</label>
                     <input type="number" placeholder="Person Count"
