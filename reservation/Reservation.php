@@ -111,6 +111,7 @@
                 <thead>
                 <tr>
                     <th scope="col">Phone Number</th>
+                    <th scope="col">Email</th>
                     <th class="th" scope="col">Person Count</th>
                     <th class="th" scope="col">Start Date</th>
                     <th class="th" scope="col">End Date</th>
@@ -135,6 +136,7 @@
                 <tr class="tr">
                     <td hidden=""><?= $row['id'] ?></td>
                     <td><?= $row['phone_number'] ?></td>
+                    <td><?= $row['email'] ?></td>
                     <td><?= $row['person_count'] ?></td>
                     <td><?= $row['start_date'] ?></td>
                     <td><?= $row['end_date'] ?></td>

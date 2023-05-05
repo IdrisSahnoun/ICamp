@@ -147,7 +147,6 @@
                     </select>
                 </div>
                 <img src="data:image/jpeg;base64,<?php echo base64_encode($result['image']); ?>" />
-
             </form>
 
         </div>

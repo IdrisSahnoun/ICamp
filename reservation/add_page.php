@@ -119,6 +119,12 @@
                            class="u-input input_label"
                            required="">
                 </div>
+                <div class="u-form-group u-form-name u-label-none u-form-group-1">
+                    <label for="email" class="input_label ">Email</label>
+                    <input type="email" placeholder="Email" id="email" name="email"
+                           class="u-input input_label"
+                           required="">
+                </div>
                 <div class="u-form-email u-form-group u-label-none u-form-group-2">
                     <label for="person_count" class="u-label">Person Count</label>
                     <input type="number" placeholder="Person Count" id="person_count" name="person_count"
@@ -143,7 +149,7 @@
                     </select>
                 </div>
                 <div class="u-align-left u-form-group u-form-submit u-form-group-5">
-                    <a href="Reservation.php" class="u-btn u-btn-submit u-button-style">Submit</a>
+                    <button  type=submit id="submit" name=submit class="u-btn u-btn-submit u-button-style">Submit</button>
                     <input type="submit" value="submit" class="u-form-control-hidden">
                 </div>
                 <input type="hidden" value="" name="recaptchaResponse">
