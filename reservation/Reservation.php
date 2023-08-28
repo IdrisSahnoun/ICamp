@@ -67,7 +67,7 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="destination/Destination.php" style="padding: 10px 92px;">Destination</a>
+                            href="  destination/Destination.php" style="padding: 10px 92px;">Destination</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
