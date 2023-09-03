@@ -129,13 +129,6 @@
                            value="<?php echo $result['location']; ?>"
                            class="u-input input_label" required="">
                 </div>
-                <div class="u-form-group u-label-none u-form-group-3">
-                    <label for="activity_type" class="u-label">Activity Type</label>
-                    <input type="text" placeholder="Activity Type"
-                           id="activity_type" name="activity_type"
-                           value="<?php echo $result['activity_type']; ?>"
-                           class="u-input input_label">
-                </div>
                 <div class="u-form-group u-label-none u-form-group-3" >
                     <select  placeholder="Rating" id="rating" name="rating" class="u-input input_label">
                         <option value="<?php echo $result['rating']; ?>" ></option>

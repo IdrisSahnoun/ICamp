@@ -141,11 +141,6 @@
                     <input type="text" placeholder="Location" id="location" name="location"
                            class="u-input input_label" required="">
                 </div>
-                <div class="u-form-group u-label-none u-form-group-3">
-                    <label for="activity_type" class="u-label">Activity Type</label>
-                    <input type="text" placeholder="Activity Type" id="activity_type" name="activity_type"
-                           class="u-input input_label">
-                </div>
                 <div class="u-form-group u-label-none u-form-group-4" >
                 <select placeholder="Rating" id="rating" name="rating" class="u-input input_label">
                     <option value="" ></option>

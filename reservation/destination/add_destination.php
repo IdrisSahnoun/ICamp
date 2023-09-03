@@ -10,12 +10,11 @@ if(isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
 
     try {
         $query = $pdo->prepare(
-            'INSERT INTO destination (name, location, activity_type, rating, image)
-      VALUES (:name, :location, :activity_type, :rating, :image)'
+            'INSERT INTO destination (name, location, rating, image)
+      VALUES (:name, :location, :rating, :image)'
         );
         $query->bindParam(':name', $_POST['name']);
         $query->bindParam(':location', $_POST['location']);
-        $query->bindParam(':activity_type', $_POST['activity_type']);
         $query->bindParam(':rating', $_POST['rating']);
         $query->bindParam(':image', $data, PDO::PARAM_LOB);
         $query->execute();

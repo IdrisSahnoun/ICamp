@@ -112,7 +112,6 @@
                 <tr>
                     <th scope="col">Category</th>
                     <th class="th" scope="col">Location</th>
-                    <th class="th" scope="col">Activity Type</th>
                     <th class="th" scope="col">Rating</th>
                 </tr>
                 </thead>
@@ -123,7 +122,6 @@
                         <td hidden=""><?= $row['id'] ?></td>
                         <td><?= $row['name'] ?></td>
                         <td><?= $row['location'] ?></td>
-                        <td><?= $row['activity_type'] ?></td>
                         <td><?= $row['rating'] ?></td>
                         <td><a href="update_destination_page.php?id=<?= $row['id'] ?>">Update</a></td>
                         <td><a href="delete_destination.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this category?')">Delete</a></td>
