@@ -131,8 +131,8 @@
             <form action="add_destination.php" method="POST" enctype="multipart/form-data">
 
                 <div class="u-form-group u-form-name u-label-none u-form-group-1">
-                    <label for="name" class="input_label ">Destination Name</label>
-                    <input type="text" placeholder="Destination Name" id="name" name="name"
+                    <label for="name" class="input_label ">Category</label>
+                    <input type="text" placeholder="Category" id="name" name="name"
                            class="u-input input_label"
                            required="">
                 </div>
