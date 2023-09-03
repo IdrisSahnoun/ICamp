@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reservation</title>
+    <title>Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -63,11 +63,11 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="Reservation.php" style="padding: 10px 92px;">Reservation</a>
+                            href="Reservation.php" style="padding: 10px 92px;">Events</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="  destination/Destination.php" style="padding: 10px 92px;">Destination</a>
+                            href="  destination/Destination.php" style="padding: 10px 92px;">Category</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
@@ -88,7 +88,7 @@
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link">Shop</a>
                             </li>
-                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Reservation</a>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Reservation.php">Events</a>
                             </li>
                             <li class="u-nav-item"><a class="u-button-style u-nav-link" href="../Contact.html">Contact</a>
                             </li>
@@ -115,7 +115,7 @@
                     <th class="th" scope="col">Person Count</th>
                     <th class="th" scope="col">Start Date</th>
                     <th class="th" scope="col">End Date</th>
-                    <th class="th" scope="col">Destination</th>
+                    <th class="th" scope="col">Category</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -148,7 +148,7 @@
                 </tbody>
             </table>
             <a href="add_page.php"
-               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Reservation</a>
+               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Event</a>
         </div>
     </div>
 </section>

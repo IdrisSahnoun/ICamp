@@ -140,9 +140,9 @@
                     <input type="date" placeholder="End Date" id="end_date" name="end_date" class="u-input input_label">
                 </div>
                 <div class="u-form-group u-label-none u-form-group-4">
-                    <label for="destination" class="u-label">Input</label>
+                    <label for="category" class="u-label">Input</label>
                     <?php include 'destination/list_destination.php'; ?>
-                    <select id="destination" name="destination" class="u-input input_label">
+                    <select id="event" name="event" class="u-input input_label">
                         <?php foreach ($result as $row) : ?>
                             <option value="<?= $row['id'] ?>"><?= $row['name'] ?></option>
                         <?php endforeach; ?>

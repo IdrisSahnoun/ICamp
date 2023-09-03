@@ -63,11 +63,11 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../Reservation.php" style="padding: 10px 92px;">Reservation</a>
+                            href="../Reservation.php" style="padding: 10px 92px;">Events</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="Destination.php" style="padding: 10px 92px;">Destination</a>
+                            href="Destination.php" style="padding: 10px 92px;">Category</a>
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
@@ -110,7 +110,7 @@
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th scope="col">Destination Name</th>
+                    <th scope="col">Category</th>
                     <th class="th" scope="col">Location</th>
                     <th class="th" scope="col">Activity Type</th>
                     <th class="th" scope="col">Rating</th>
@@ -126,14 +126,14 @@
                         <td><?= $row['activity_type'] ?></td>
                         <td><?= $row['rating'] ?></td>
                         <td><a href="update_destination_page.php?id=<?= $row['id'] ?>">Update</a></td>
-                        <td><a href="delete_destination.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this destination?')">Delete</a></td>
+                        <td><a href="delete_destination.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this category?')">Delete</a></td>
                         <td><a href="destination_details.php?id=<?= $row['id'] ?>">Details</a></td>
                     </tr>
                 <?php endforeach; ?>
                 </tbody>
             </table>
             <a href="add_destination_page.php"
-               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Destination</a>
+               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Category</a>
         </div>
     </div>
 </section>
