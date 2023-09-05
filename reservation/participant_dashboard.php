@@ -17,12 +17,35 @@
           href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 
 
-    <script type="application/ld+json">{
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Site1",
-            "logo": "images/mostfa.png"
-        }</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tableRows = document.querySelectorAll(".tr");
+
+            // Function to filter table rows by keyword
+            function filterTableRows(keyword) {
+                tableRows.forEach(function (row) {
+                    const cellContents = Array.from(row.querySelectorAll("td")).map(function (cell) {
+                        return cell.textContent.toLowerCase();
+                    });
+
+                    if (cellContents.some(function (content) {
+                        return content.includes(keyword.toLowerCase());
+                    })) {
+                        row.style.display = "table-row";
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+            }
+
+            // Handle search input changes
+            const searchInput = document.getElementById("search");
+            searchInput.addEventListener("input", function () {
+                const keyword = this.value;
+                filterTableRows(keyword);
+            });
+        });
+    </script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Accueil">
     <meta property="og:type" content="website">
@@ -107,6 +130,10 @@
          data-image-height="1320" id="sec-6196">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
+            <div class="u-input input_label">
+                <label for="search">Search: </label>
+                <input type="text" id="search" placeholder="Enter a keyword">
+            </div>
             <table class="table table-striped">
                 <thead>
                 <tr>
