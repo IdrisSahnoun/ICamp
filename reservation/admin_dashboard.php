@@ -55,14 +55,6 @@
                 <ul class="u-nav u-unstyled u-nav-1">
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../index.html" style="padding: 10px 92px;">Accueil</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            style="padding: 10px 92px;">Shop</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
                             href="Reservation.php" style="padding: 10px 92px;">Events</a>
                     </li>
                     <li class="u-nav-item"><a
@@ -71,11 +63,7 @@
                     </li>
                     <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../Contact.html" style="padding: 10px 92px;">Contact</a>
-                    </li>
-                    <li class="u-nav-item"><a
-                            class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
-                            href="../À-propos-de.html" style="padding: 10px 92px;">À propos</a>
+                            href="../index.html" style="padding: 10px 92px;">LogOut</a>
                     </li>
                 </ul>
             </div>
