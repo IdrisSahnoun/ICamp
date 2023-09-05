@@ -107,6 +107,14 @@
          data-image-height="1320" id="sec-6196">
     <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-form u-form-1">
+            <div class="form-group">
+                <label for="sort">Sort by Location:</label>
+                <select class="form-control" id="sort">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <div id="locationTableWrapper">
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -134,6 +142,37 @@
                class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Category</a>
         </div>
     </div>
+    <script>
+        document.getElementById('sort').addEventListener('change', function () {
+            sortTable();
+        });
+
+        function sortTable() {
+            const table = document.querySelector('#locationTableWrapper table');
+            const rows = Array.from(table.querySelectorAll('tbody tr'));
+            const sortBy = document.getElementById('sort').value;
+
+            rows.sort((a, b) => {
+                const locationA = a.querySelector('td:nth-child(3)').textContent.trim();
+                const locationB = b.querySelector('td:nth-child(3)').textContent.trim();
+
+                if (sortBy === 'asc') {
+                    return locationA.localeCompare(locationB);
+                } else {
+                    return locationB.localeCompare(locationA);
+                }
+            });
+
+            // Remove existing rows from the table
+            rows.forEach(row => table.querySelector('tbody').removeChild(row));
+
+            // Append sorted rows back to the table
+            rows.forEach(row => table.querySelector('tbody').appendChild(row));
+        }
+
+        // Initial sorting (you can choose 'asc' or 'desc' as default)
+        sortTable();
+    </script>
 </section>
 <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f3c2">
     <div class="u-clearfix u-sheet u-sheet-1">
