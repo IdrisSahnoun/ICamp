@@ -141,14 +141,12 @@
                         <td><?= $row['start_date'] ?></td>
                         <td><?= $row['end_date'] ?></td>
                         <td><?= $destination['name'] ?></td>
-                        <td><a href="update_page.php?id=<?= $row['id'] ?>">Update</a></td>
-                        <td><a href="php/delete_reservation.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this reservation?')">Delete</a></td>
-                    </tr>
+                        <td><a href="update_page.php?id=<?= $row['id'] ?>">Participate</a></td>
+                        <td><a href="update_page.php?id=<?= $row['id'] ?>">Favorite</a></td>
+                        </tr>
                 <?php endforeach; ?>
                 </tbody>
             </table>
-            <a href="add_page.php"
-               class="u-border-1 u-border-grey-75 u-border-hover-white u-btn u-btn-round u-button-style u-gradient u-none u-radius-50 u-text-body-alt-color u-btn-1">Add Event</a>
         </div>
     </div>
 </section>
